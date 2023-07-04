@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Quote from "./components/Quote";
 
 function App() {
+  // (function () {
+  //   var cors_api_host = "cors-anywhere.herokuapp.com";
+  //   var cors_api_url = "https://" + cors_api_host + "/";
+  //   var slice = [].slice;
+  //   var origin = window.location.protocol + "//" + window.location.host;
+  //   var open = XMLHttpRequest.prototype.open;
+  //   XMLHttpRequest.prototype.open = function () {
+  //     var args = slice.call(arguments);
+  //     var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+  //     if (
+  //       targetOrigin &&
+  //       targetOrigin[0].toLowerCase() !== origin &&
+  //       targetOrigin[1] !== cors_api_host
+  //     ) {
+  //       args[1] = cors_api_url + args[1];
+  //     }
+  //     return open.apply(this, args);
+  //   };
+  // })();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Quote />
     </div>
   );
 }
